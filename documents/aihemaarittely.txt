@@ -1,0 +1,7 @@
+Aihe: Vuoropohjainen peli
+
+Toteutetaan yksinkertainen luolastopeli legendaarisen Rogue -pelin hengess‰. Peliss‰ pelaajan on onnistuttava p‰‰sem‰‰n luolaston l‰pi, ja t‰ss‰ onnistuakseen on pelaajan suoriuduttava erilaisista haasteista.
+
+K‰ytt‰j‰n‰ on vain yksi pelaaja.
+
+Pelaaja voi aloittaa uuden pelin, ja mahdollisesti jatkaa peli‰ jos onnistutaan toteuttamaan pelitilanteen tallentaminen, mik‰li tarpeellista.
