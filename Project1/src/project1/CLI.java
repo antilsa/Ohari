@@ -1,6 +1,5 @@
 package project1;
 
-//import java.awt.Event;
 import java.util.Scanner;
 
 class CLI {
@@ -15,7 +14,6 @@ class CLI {
 
     public void start() {
         System.out.println("Type and enter \"n\" for a new game, \"l\" to load a game or \"q\" to quit.");
-        // Event.KEY_PRESS
         boolean game = false;
         while (!game) {
             System.out.print("> ");
@@ -39,7 +37,9 @@ class CLI {
             System.out.println("");
             System.out.print("> ");
             String command = scanner.nextLine();
-            state.playerMove(command);
+            if (!command.isEmpty()) {
+                state.playerMove(command);
+            }
         }
     }
 }

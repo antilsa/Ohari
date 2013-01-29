@@ -1,8 +1,6 @@
-
 package project1;
 
 import java.util.Collection;
-
 
 class Display {
 
@@ -10,23 +8,23 @@ class Display {
     }
 
     public void draw(int width, int height, Collection<Entity> entities) {
-        int x = 0;
+        int x;
         int y = 0;
         while (y < height) {
             x = 0;
+            char icon;
             while (x < width) {
+                icon = '.';
                 for (Entity entity : entities) {
                     if (entity.getX() == x && entity.getY() == y) {
-                        System.out.print(entity.getIcon());
-                    } else {
-                        System.out.print(".");
+                        icon = entity.getIcon();
                     }
                 }
+                System.out.print(icon);
                 x++;
             }
             System.out.println("");
             y++;
         }
     }
-
 }

@@ -5,6 +5,10 @@ class Player implements Entity {
     private int x;
     private int y;
     private char icon;
+    public static final char UP = 'w';
+    public static final char LEFT = 'a';
+    public static final char DOWN = 's';
+    public static final char RIGHT = 'd';
 
     public Player(int x, int y, char icon) {
         this.x = x;
@@ -25,13 +29,13 @@ class Player implements Entity {
     }
     
     public void move(char direction) {
-            if (direction == 'w') {
+            if (direction == UP) {
                 this.y--;
-            } else if (direction == 's') {
+            } else if (direction == DOWN) {
                 this.y++;
-            } else if (direction == 'a') {
+            } else if (direction == LEFT) {
                 this.x--;
-            } else if (direction == 'd') {
+            } else if (direction == RIGHT) {
                 this.x++;
             }
     }
