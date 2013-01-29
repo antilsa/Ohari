@@ -27,7 +27,7 @@ class State {
         entities.add(player);
         entities.add(mob);
         collision = new Collision();
-        
+
     }
 
     public void gameContinue() {
@@ -45,7 +45,7 @@ class State {
             // 4 testing
             System.out.println("COMBAT");
         } else {
-        player.move(direction);
+            player.move(direction);
             // 4 testing
             System.out.println("MOVEMENT");
         }

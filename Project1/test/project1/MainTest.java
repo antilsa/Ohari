@@ -26,23 +26,33 @@ public class MainTest {
     
     Player player;
     State state;
+    Mob mob;
+    public static final char UP = 'w';
+    public static final char LEFT = 'a';
+    public static final char DOWN = 's';
+    public static final char RIGHT = 'd';
     
     @Before
     public void setUp() {
         player = new Player(2, 3, '@');
         state = new State();
+        mob = new Mob(4, 4, 'T');
     }
     
     @Test
     public void moving() {
-        player.move('a');
-        player.move('a');
+        player.move(LEFT);
+        player.move(LEFT);
         assertEquals(0, player.getX());
     }
     
-    @Test
-    public void movingInput() {
-    }
+//    @Test
+//    public void collision() {
+//        state.playerMove("d");
+//        state.playerMove("d");
+//        state.playerMove("s");
+//        assertEquals(3, player.getY());
+//    }
     
     @After
     public void tearDown() {
