@@ -8,5 +8,9 @@ public interface Entity {
     public int getY();
     
     public char getIcon();
+
+    public int dealDamage();
+    
+    public void receiveDamage(int damage);
     
 }
